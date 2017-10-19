@@ -39,7 +39,7 @@ public class MyShortestPath {
 			}
 			return str1.toString();
 		}
-		if((startPoint == -1) || (endPoint == -1 && word2 != "#")){
+		if((startPoint == -1) || (endPoint == -1 && (!word2.equals("#")))){
 			String completedString  = new StringBuilder().append("所给单词有未出现在文本中的").toString();
 			return completedString;
 		}

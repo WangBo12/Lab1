@@ -70,6 +70,7 @@ public  class MyMain {
 			{
 				System.out.println("序号输入有误，请检查后重新输入");
 			}
+			//input.close();
 		}
 		
 		

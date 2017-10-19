@@ -46,6 +46,7 @@ class StopControl implements Runnable{
 		this.adjustList = adjustList;
 	}
 	public void run() {
+		Random random = new Random();
 		if(Thread.currentThread() == go){
 			StringBuilder str = new StringBuilder();
 			boolean[][] flag = new boolean[adjustList.size()][adjustList.size()];    //判断是否已经遍历的标志位
@@ -54,12 +55,12 @@ class StopControl implements Runnable{
 					flag[i][j] = false;
 				}
 			}
-			int firstRandomPos = new Random().nextInt(adjustList.size());
+			int firstRandomPos =random.nextInt(adjustList.size());
 			str.append(adjustList.get(firstRandomPos).word);
 			
 			int connectionNum = calculate(firstRandomPos);
 			while((connectionNum != 0) && (flagTop == true)){
-				int connectionRandom = new Random().nextInt(connectionNum) + 1;
+				int connectionRandom = random.nextInt(connectionNum) + 1;
 				int nextPos = find(firstRandomPos, connectionRandom);
 				if(flag[firstRandomPos][nextPos] == true){
 					str.append(" ");
@@ -91,7 +92,7 @@ class StopControl implements Runnable{
 			}
 			
 			//向文件写入内容(输出流)
-			byte bt[] = completedString.getBytes();
+			byte[] bt = completedString.getBytes();
 			try {
 				FileOutputStream in = new FileOutputStream(file);
 				try {
@@ -120,6 +121,7 @@ class StopControl implements Runnable{
 					System.out.println("不正确的输入,继续输入?");
 				}
 			}
+			scanner.close();
 		}
 	}
 	

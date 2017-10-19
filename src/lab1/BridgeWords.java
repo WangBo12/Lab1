@@ -17,8 +17,7 @@ public class BridgeWords
 		if(pre == -1 || next == -1)  
 		{
 			word3 = "No word1 or word2 in the graph!";
-		}
-		else
+		}else
 		{
 			//System.out.println(pre + " " + next);
 			VNode node = List.get(pre);
@@ -43,7 +42,8 @@ public class BridgeWords
 		for(int i = 0; i < List.size(); i++)
 		{
 			if((List.get(i).word).equals(word))
-				{return i;
+				{
+				return i;
 				}
 		}
 		return -1;

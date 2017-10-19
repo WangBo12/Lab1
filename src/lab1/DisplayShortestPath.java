@@ -110,7 +110,7 @@ class ImagePane extends JPanel {
             return this.image;
     }
     public void paintComponent(Graphics g) {
-            ImageIcon img = new ImageIcon("E:\\eclipse workplace\\Lab1GAI\\shortPath.jpg");
+            ImageIcon img = new ImageIcon("D:\\A_ruanjian\\Lab4\\shortPath.jpg");
             g.drawImage(img.getImage(), 0, 0, theSize.width, theSize.height, null);
     }
     public void enlarge() {
