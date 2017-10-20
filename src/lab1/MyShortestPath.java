@@ -39,7 +39,11 @@ public class MyShortestPath {
 			}
 			return str1.toString();
 		}
+<<<<<<< HEAD
 		if((startPoint == -1) || (endPoint == -1 && (!word2.equals("#")))){
+=======
+		if((startPoint == -1) || (endPoint == -1 && word2 != "#")){
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 			String completedString  = new StringBuilder().append("所给单词有未出现在文本中的").toString();
 			return completedString;
 		}

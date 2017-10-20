@@ -1,5 +1,9 @@
 package lab1;
+<<<<<<< HEAD
 //2.4change
+=======
+
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 import java.util.ArrayList;
 import java.util.List;
 
@@ -87,7 +91,11 @@ class AdList {
 	
 	public boolean judgeForAdd(String word1, String word2){
 		int pos_word1 = locate(word1);
+<<<<<<< HEAD
 		int pos_word2 = locate(word2); 
+=======
+		int pos_word2 = locate(word2);
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 		ENode e = AdList.get(pos_word1).next;
 		while(e != null){
 			if(e.pos == pos_word2)

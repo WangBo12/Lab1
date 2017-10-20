@@ -46,7 +46,10 @@ class StopControl implements Runnable{
 		this.adjustList = adjustList;
 	}
 	public void run() {
+<<<<<<< HEAD
 		Random random = new Random();
+=======
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 		if(Thread.currentThread() == go){
 			StringBuilder str = new StringBuilder();
 			boolean[][] flag = new boolean[adjustList.size()][adjustList.size()];    //判断是否已经遍历的标志位
@@ -55,12 +58,20 @@ class StopControl implements Runnable{
 					flag[i][j] = false;
 				}
 			}
+<<<<<<< HEAD
 			int firstRandomPos =random.nextInt(adjustList.size());
+=======
+			int firstRandomPos = new Random().nextInt(adjustList.size());
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 			str.append(adjustList.get(firstRandomPos).word);
 			
 			int connectionNum = calculate(firstRandomPos);
 			while((connectionNum != 0) && (flagTop == true)){
+<<<<<<< HEAD
 				int connectionRandom = random.nextInt(connectionNum) + 1;
+=======
+				int connectionRandom = new Random().nextInt(connectionNum) + 1;
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 				int nextPos = find(firstRandomPos, connectionRandom);
 				if(flag[firstRandomPos][nextPos] == true){
 					str.append(" ");
@@ -92,7 +103,11 @@ class StopControl implements Runnable{
 			}
 			
 			//向文件写入内容(输出流)
+<<<<<<< HEAD
 			byte[] bt = completedString.getBytes();
+=======
+			byte bt[] = completedString.getBytes();
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 			try {
 				FileOutputStream in = new FileOutputStream(file);
 				try {
@@ -121,7 +136,10 @@ class StopControl implements Runnable{
 					System.out.println("不正确的输入,继续输入?");
 				}
 			}
+<<<<<<< HEAD
 			scanner.close();
+=======
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 		}
 	}
 	

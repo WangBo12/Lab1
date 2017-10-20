@@ -1,6 +1,10 @@
 package lab1;
 import java.util.*;
+<<<<<<< HEAD
 //change here
+=======
+
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 /*To find the word linking word1 and word2
  * Construct function:  BridgeWords(String word1, String word2, List<VNode>List);
  * Display index result : Display();
@@ -13,11 +17,20 @@ public class BridgeWords
 	ArrayList<String> result = new ArrayList<String>();
 	public BridgeWords(String word1, String word2, List<VNode> List)
 	{
+<<<<<<< HEAD
 		final int pre = Index(word1, List), next = Index(word2, List);
 		if(pre == -1 || next == -1)  
 		{
 			word3 = "No word1 or word2 in the graph!";
 		}else
+=======
+		int pre = Index(word1, List), next = Index(word2, List);
+		if(pre == -1 || next == -1)  
+		{
+			word3 = "No word1 or word2 in the graph!";
+		}
+		else
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 		{
 			//System.out.println(pre + " " + next);
 			VNode node = List.get(pre);
@@ -33,7 +46,11 @@ public class BridgeWords
 				}
 				edge = edge.next;
 			}
+<<<<<<< HEAD
 			if(result.isEmpty()) word3 = "No bridge words from word1 to word2!";
+=======
+			if(result.size() == 0) word3 = "No bridge words from word1 to word2!";
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 			else word3 = "The bridge words from word1 to word2 are: ";
 		}
 	}
@@ -42,9 +59,13 @@ public class BridgeWords
 		for(int i = 0; i < List.size(); i++)
 		{
 			if((List.get(i).word).equals(word))
+<<<<<<< HEAD
 				{
 				return i;
 				}
+=======
+				return i;
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 		}
 		return -1;
 	}

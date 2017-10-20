@@ -3,12 +3,20 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 
+<<<<<<< HEAD
+=======
+import java.awt.Toolkit;
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.util.*;
 
 import javax.swing.ImageIcon;
+<<<<<<< HEAD
+=======
+import javax.swing.JButton;
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -28,7 +36,11 @@ public class DisplayShortestPath {
 			ENode node = V.next;
 			while(node != null)
 			{
+<<<<<<< HEAD
 				str += V.word.toString();
+=======
+				str += (V.word).toString();
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 				str += " -> ";
 				str += ((list.get(node.pos)).word).toString();
 				if( EdgeCheck(V.word, list.get(node.pos).word) )
@@ -110,7 +122,11 @@ class ImagePane extends JPanel {
             return this.image;
     }
     public void paintComponent(Graphics g) {
+<<<<<<< HEAD
             ImageIcon img = new ImageIcon("D:\\A_ruanjian\\Lab4\\shortPath.jpg");
+=======
+            ImageIcon img = new ImageIcon("E:\\eclipse workplace\\Lab1GAI\\shortPath.jpg");
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
             g.drawImage(img.getImage(), 0, 0, theSize.width, theSize.height, null);
     }
     public void enlarge() {
