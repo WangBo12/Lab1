@@ -10,11 +10,11 @@ import javax.swing.*;
 
 //import Graphviz.GraphViz;
 
-public class prago
+public class Prago
 {
    public static void main(String[] args) throws IOException
    {
-      prago p = new prago();
+      Prago p = new Prago();
       
       p.start();
 //      p.start2();

@@ -103,11 +103,8 @@ class StopControl implements Runnable{
 			}
 			
 			//向文件写入内容(输出流)
-<<<<<<< HEAD
-			byte[] bt = completedString.getBytes();
-=======
+
 			byte bt[] = completedString.getBytes();
->>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 			try {
 				FileOutputStream in = new FileOutputStream(file);
 				try {
@@ -136,10 +133,7 @@ class StopControl implements Runnable{
 					System.out.println("不正确的输入,继续输入?");
 				}
 			}
-<<<<<<< HEAD
-			scanner.close();
-=======
->>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
+
 		}
 	}
 	
