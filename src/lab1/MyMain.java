@@ -70,6 +70,10 @@ public  class MyMain {
 			{
 				System.out.println("序号输入有误，请检查后重新输入");
 			}
+<<<<<<< HEAD
+			//input.close();
+=======
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 		}
 		
 		

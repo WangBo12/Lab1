@@ -3,4 +3,20 @@ Cats have highly specialized teeth for the killing of prey and the tearing of me
 
 The cat's tongue has sharp spines, or papillae, useful for retaining and ripping flesh from a carcass. These papillae are small backward-facing hooks that contain keratin which also assist in their grooming.
 
+<<<<<<< HEAD
 The cat's oral structures provide for a variety of vocalizations used for communication, including meowing, purring, hissing, growling, squeaking, chirping, clicking, and grunting.
+<<<<<<< HEAD
+<<<<<<< HEAD
+change
+=======
+
+cat
+dog
+>>>>>>> C4
+=======
+
+Btwo change
+>>>>>>> B2
+=======
+The cat's oral structures provide for a variety of vocalizations used for communication, including meowing, purring, hissing, growling, squeaking, chirping, clicking, and grunting.
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724

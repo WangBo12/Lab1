@@ -1,5 +1,19 @@
 package lab1;
 
+<<<<<<< HEAD
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.io.File;
+import java.util.List;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+=======
 import java.util.List;
 import java.io.File;
 import java.awt.*;
@@ -9,6 +23,7 @@ import java.applet.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.awt.event.*;
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 
 public class DisplayGraph
 {
@@ -41,7 +56,10 @@ public class DisplayGraph
 	    File out = new File("out." + type);   // out.gif in this example
 	    gv.writeGraphToFile( gv.getGraph(gv.getDotSource(), type, representationType), out );
 	    
+<<<<<<< HEAD
+=======
 	    ScrollPaneDemo S = new ScrollPaneDemo();
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
 	    
 	    
 	}
@@ -96,7 +114,11 @@ class ImagePanel extends JPanel {
             return this.image;
     }
     public void paintComponent(Graphics g) {
+<<<<<<< HEAD
+            ImageIcon img = new ImageIcon("D:\\A_ruanjian\\Lab4\\out.jpg");
+=======
             ImageIcon img = new ImageIcon("E:\\eclipse workplace\\Lab1GAI\\out.jpg");
+>>>>>>> 14bf1fedd7087446449aabe42d21b09e180d2724
             g.drawImage(img.getImage(), 0, 0, theSize.width, theSize.height, null);
     }
     public void enlarge() {
